@@ -513,6 +513,10 @@ text-shadow:0 0 12px rgba(212,166,79,.5);
 
 @media (max-width: 768px){
 
+nav{
+display:none;
+}
+
 .navbar{
 
 flex-direction:column;
@@ -523,7 +527,8 @@ gap:15px;
 
 .logo{
 
-font-size:22px;
+font-size:12px;
+text-align:center;
 
 }
 
@@ -540,7 +545,8 @@ display:none;
 }
 
 .hero{
-
+    
+padding-top:70px;
 background-size:cover;
 background-position:center center;
 
@@ -567,8 +573,11 @@ max-width:100%;
 
 .hero-content h1{
 
-font-size:52px;
-line-height:1.05;
+.hero-content h1{
+font-size:22px;
+line-height:1.2;
+margin-bottom:15px;
+text-align:center;
 
 }
 
