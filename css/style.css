@@ -41,7 +41,9 @@ font-family:'Playfair Display', serif;
 
 color:white;
 
-font-size:28px;
+font-size:16px;
+
+text-align:center;
 
 font-weight:bold;
 
@@ -502,5 +504,102 @@ transform:scale(1.05);
 color:#f0c56a;
 
 text-shadow:0 0 12px rgba(212,166,79,.5);
+
+}
+
+/* ========================= */
+/* RESPONSIVE MOVIL */
+/* ========================= */
+
+@media (max-width: 768px){
+
+.navbar{
+
+flex-direction:column;
+padding:15px 20px;
+gap:15px;
+
+}
+
+.logo{
+
+font-size:22px;
+
+}
+
+nav ul{
+
+display:none;
+
+}
+
+.nav-buttons{
+
+display:none;
+
+}
+
+.hero{
+
+background-size:cover;
+background-position:center center;
+
+justify-content:center;
+text-align:center;
+
+.hero{
+
+min-height:100vh;
+
+padding-top:120px;
+
+}
+
+}
+
+.hero-content{
+
+margin-left:0;
+padding:0 20px;
+max-width:100%;
+
+}
+
+.hero-content h1{
+
+font-size:52px;
+line-height:1.05;
+
+}
+
+.hero-divider{
+
+max-width:100%;
+
+}
+
+.hero-content p{
+
+font-size:18px;
+max-width:100%;
+
+}
+
+.btn-primary{
+
+width:100%;
+max-width:320px;
+
+padding:22px 25px;
+
+font-size:18px;
+
+}
+
+.beta-text{
+
+font-size:13px;
+
+}
 
 }
