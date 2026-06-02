@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
 <head>
@@ -9,35 +10,207 @@
 
 <title>Háblame Sobre</title>
 
-<style>
 
-body{
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-    margin:0;
-    padding:0;
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    background:black;
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    overflow:hidden;
-
-}
-
-img{
-
-    width:100vw;
-    height:100vh;
-
-    object-fit:contain;
-
-}
-
-</style>
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-<img src="assets/imagenes/index.jpg">
+<div id="welcomeModal" class="modal">
+
+  <div class="modal-content">
+
+    <h2>🎙 Bienvenido a Háblame Sobre</h2>
+
+    <p>
+
+      Conocimiento para escuchar, aprender,
+      transformar y compartir.
+
+    </p>
+
+    <audio controls>
+
+      <source src="assets/audio/bienvenida.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <br><br>
+
+    <label>
+
+      <input type="checkbox" id="hideWelcome">
+
+      No volver a mostrar
+
+    </label>
+
+    <br><br>
+
+    <button id="continueBtn" class="btn-primary">
+
+      Continuar
+
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- MENÚ -->
+
+<header class="navbar">
+
+<div class="logo">
+
+Háblame Sobre
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Inicio</a></li>
+
+<li><a href="explorar.html">Explorar</a></li>
+
+<li><a href="biblioteca.html">Mi Biblioteca</a></li>
+
+<li><a href="comunidad.html">Comunidad</a></li>
+
+<li><a href="idiomas.html">Idiomas</a></li>
+
+<li><a href="profesionales.html">Profesionales</a></li>
+
+</ul>
+
+</nav>
+
+<div class="nav-buttons">
+
+<a href="explorar.html" class="btn-app">
+
+Explorar
+
+</a>
+
+<a href="login.html" class="btn-login">
+
+Ingresar
+
+</a>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-overlay">
+
+<div class="hero-content">
+
+<h1>HÁBLAME SOBRE</h1>
+
+<div class="hero-divider">
+
+<span></span>
+
+&#127897;
+
+<span></span>
+
+</div>
+
+<p>
+
+Conocimiento para escuchar,
+
+aprender, transformar y compartir.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#"
+
+id="openBetaModal"
+
+class="btn-primary">
+
+<span class="btn-icon">
+
+🎙
+
+</span>
+
+<span>
+
+GENERAR HISTORIA CON APP
+
+</span>
+
+</a>
+
+<p class="beta-text">
+
+Versión Beta Privada
+
+</p>
+
+<button id="openWelcomeModal"
+
+class="btn-intro">
+
+▶ Escuchar Introducción
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div id="betaModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <h2>🎙 Háblame Sobre</h2>
+
+        <p>
+            La APP ya se encuentra operativa y en fase de pruebas privadas.
+        </p>
+
+        <p>
+            Actualmente estamos validando la experiencia de generación de historias,
+            audios y descargas antes de su lanzamiento público.
+        </p>
+
+        <p class="modal-highlight">
+            Próximamente disponible online.
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/main.js"></script>
 
 </body>
 
